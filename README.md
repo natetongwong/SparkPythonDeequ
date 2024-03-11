@@ -1,2 +1,2 @@
 # SparkPythonDeequ
-Sample Package Hub with Deequ gem
+Sample Package Hub with custom gem leveraging AWS Deequ.
