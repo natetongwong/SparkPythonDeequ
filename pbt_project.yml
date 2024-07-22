@@ -79,14 +79,29 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
+  businessRules: {}
 subgraphs: {}
 sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-07-22T07:38:33.830402Z'
+  name: plibMaven
+  version: 8.0.25
+  id: '749641810'
+  createdAt: '2024-07-22T07:38:33.830362Z'
+- type: plibPypi
+  modifiedAt: '2024-07-22T07:38:33.830437Z'
+  name: plibPypi
+  version: 1.9.9
+  id: '1164353288'
+  createdAt: '2024-07-22T07:38:33.830427Z'
 projectDependencies:
   '12655':
     projectUID: 12655

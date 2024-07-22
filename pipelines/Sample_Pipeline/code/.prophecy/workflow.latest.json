@@ -3,13 +3,18 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : { },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.25",
+        "pyPiVersion" : "1.9.9"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/Sample_Pipeline",
     "language" : "python",
-    "fabricId" : "4345",
+    "fabricId" : "15725",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -60,7 +65,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "sample_pipeline",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "7ZYqulj7anYXs4S8O22D_",
@@ -167,7 +172,7 @@
       },
       "componentInfo" : {
         "gemId" : "gems/Deequ",
-        "projectName" : "Data_Quality_Deequ"
+        "projectName" : "SparkPythonDeequ"
       }
     },
     "kfozX63bYrfu0ewhRbVmQ$$U2boyPeJil4x-MET8k3tG" : {
@@ -473,8 +478,7 @@
     "severity" : 1,
     "message" : "At least one rule has to be specified",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.38iyiQVGt4QTvJTS20XIz$$9QRm0YKum9e54Ab1Aow-s",
     "range" : {
@@ -490,8 +494,7 @@
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.-ddQK_ik8eX0F9EzJ8r2b$$1g_vZa-g_6iClXxlnVN_R",
     "range" : {
@@ -507,8 +510,7 @@
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.kfozX63bYrfu0ewhRbVmQ$$U2boyPeJil4x-MET8k3tG",
     "range" : {
@@ -524,8 +526,7 @@
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR",
     "range" : {
@@ -541,8 +542,7 @@
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[0].expression.expression",
     "range" : {
@@ -558,8 +558,7 @@
     "severity" : 2,
     "message" : "No match found for column check",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[1].expression.expression",
     "range" : {
@@ -575,8 +574,7 @@
     "severity" : 2,
     "message" : "No match found for column check_level",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[2].expression.expression",
     "range" : {
@@ -592,8 +590,7 @@
     "severity" : 2,
     "message" : "No match found for column check_status",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[3].expression.expression",
     "range" : {
@@ -609,8 +606,7 @@
     "severity" : 2,
     "message" : "No match found for column constraint",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[4].expression.expression",
     "range" : {
@@ -626,8 +622,7 @@
     "severity" : 2,
     "message" : "No match found for column constraint_status",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.GpO7w4vQu0RUQqZoD7gRS$$CHrZGPK0C7XbpxLMpk_KR.properties.expressions[5].expression.expression",
     "range" : {
@@ -643,8 +638,7 @@
     "severity" : 2,
     "message" : "No match found for column constraint_message",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.ANDyJgbsHnQ3eoE41669h$$j6qOwfcr8UegtXtvbx3tq",
     "range" : {
@@ -660,7 +654,6 @@
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
+    "relatedInformation" : [ ]
   } ]
 }
